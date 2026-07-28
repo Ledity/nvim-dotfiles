@@ -26,6 +26,7 @@ local merge_arrays = require('lib.commons').merge_arrays
 return merge_arrays(
     require 'config.packages.colorscheme',
     require 'config.packages.dired',
-    require 'config.packages.telescope'
+    require 'config.packages.telescope',
+    require 'config.packages.ui'
 )
 
