@@ -1,0 +1,8 @@
+{
+  "plugins": {
+    "token": {
+      "rev": "4a440aae7f19b09175019dd3991557ee8d30357a",
+      "src": "https://github.com/ThorstenRhau/token"
+    }
+  }
+}

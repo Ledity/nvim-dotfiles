@@ -1,1 +1,3 @@
-require("config.options")
+require 'lib.options' 
+require 'lib.keymaps' 
+require 'lib.packages'
