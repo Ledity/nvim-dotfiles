@@ -32,6 +32,10 @@ local buffer_keymaps = {
     { 'n', '<leader>j', vim.cmd.bnext, { desc = 'Switch to the next buffer' } },
     { 'n', '<leader>k', vim.cmd.bprevious, { desc = 'Switch to the previous buffer' } },
     { 'n', '<leader>l', vim.cmd.blast, { desc = 'Switch to the last buffer' } },
+    { 'n', '<C-h>', vim.cmd.bfirst, { desc = 'Switch to the first buffer' } },
+    { 'n', '<C-j>', vim.cmd.bnext, { desc = 'Switch to the next buffer' } },
+    { 'n', '<C-k>', vim.cmd.bprevious, { desc = 'Switch to the previous buffer' } },
+    { 'n', '<C-l>', vim.cmd.blast, { desc = 'Switch to the last buffer' } },
 }
 
 local keymaps = merge_arrays(window_keymaps, tab_keymaps, buffer_keymaps)
