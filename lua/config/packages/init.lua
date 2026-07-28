@@ -21,9 +21,9 @@
 ```
 ]]
 
-return {
-    {
-        src = 'https://github.com/ThorstenRhau/token',
-        config = 'colorscheme token',
-    },
-}
+local merge_arrays = require('lib.commons').merge_arrays
+
+return merge_arrays(
+    require 'config.packages.colorscheme'
+)
+
