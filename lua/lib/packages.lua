@@ -1,6 +1,9 @@
-local is_callable = require 'lib.commons'.is_callable
+local commons = require 'lib.commons'
 
-local packages = require 'config.packages'
+local is_callable = commons.is_callable
+local merge_arrays = commons.merge_arrays
+
+packages = require 'config.packages'
 
 vim.pack.add(packages)
 
