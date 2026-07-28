@@ -1,6 +1,6 @@
-local M = {}
+local m = {}
 
-function M.merge_arrays(...)
+function m.merge_arrays(...)
     local result = {}
     local n = select('#', ...)
     for i = 1, n do
@@ -13,7 +13,7 @@ function M.merge_arrays(...)
     return result
 end
 
-function M.is_callable(obj)
+function m.is_callable(obj)
     if type(obj) == 'function' 
         or type(obj) == 'table' and getmetatable(obj).__call ~= nil
     then
@@ -23,4 +23,4 @@ function M.is_callable(obj)
     return false
 end
 
-return M
+return m

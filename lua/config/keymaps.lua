@@ -2,11 +2,6 @@ local merge_arrays = require('lib.commons').merge_arrays
 
 vim.g.mapleader = ' '
 
--- HELP
-local help_keymaps = {
-    { 'n', '<leader><leader>h', ':vertical help ' }
-}
-
 -- WINDOW
 local window_keymaps = {
     { 'n', '<leader>w-', function() vim.cmd('resize -2') end },
@@ -40,6 +35,6 @@ local buffer_keymaps = {
     { 'n', '<leader>l', vim.cmd.blast },
 }
 
-local keymaps = merge_arrays(help_keymaps, window_keymaps, tab_keymaps, buffer_keymaps)
+local keymaps = merge_arrays(window_keymaps, tab_keymaps, buffer_keymaps)
 
 return keymaps

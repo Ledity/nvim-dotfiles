@@ -8,4 +8,4 @@ m.nmap = function(...)
     m.map('n', ...)
 end
 
-return map()
+return m
