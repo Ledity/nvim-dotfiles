@@ -10,10 +10,10 @@ local window_keymaps = {
     { 'n', '<leader>w>', function() vim.cmd('vertical resize +5') end, { desc = 'Increase this window\'s width' } },
     { 'n', '<leader>wv', vim.cmd.vnew, { desc = 'Split the window vertically' } },
     { 'n', '<leader>ws', vim.cmd.new, { desc = 'Split the window horizontally' } },
-}kkk
+}
 
 for _, action in ipairs { 'c', 'h', 'j', 'k', 'l', 'H', 'J', 'K', 'L', 'o', 'p', 'q', 'w', '=' } do
-    table.insert(window_keymaps, { 'n', '<leader>w' .. action, '<C-w>'..action })
+    table.insert(window_keymaps, { 'n', '<leader>w' .. action, '<C-w>' .. action })
 end
 
 -- TABS
