@@ -1,5 +1,13 @@
 {
   "plugins": {
+    "dired.nvim": {
+      "rev": "7cf5ceb69a6bbea547f97397fa5310b1571eb03a",
+      "src": "https://github.com/X3eRo0/dired.nvim"
+    },
+    "nui.nvim": {
+      "rev": "de740991c12411b663994b2860f1a4fd0937c130",
+      "src": "https://github.com/MunifTanjim/nui.nvim"
+    },
     "token": {
       "rev": "4a440aae7f19b09175019dd3991557ee8d30357a",
       "src": "https://github.com/ThorstenRhau/token"
