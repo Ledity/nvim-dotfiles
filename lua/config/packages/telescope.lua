@@ -1,4 +1,4 @@
-local nmap = require 'lib.keymaps.commons'.nmap
+local nmap = require('lib.keymaps.commons').nmap
 
 return {
     'https://github.com/nvim-lua/plenary.nvim',
@@ -13,7 +13,7 @@ return {
             nmap('<leader>fb', builtin.buffers)
             nmap('<leader>fg', builtin.live_grep)
 
-            require 'telescope'.setup {
+            require('telescope').setup {
                 defaults = {
                     mappings = {
                         i = {
