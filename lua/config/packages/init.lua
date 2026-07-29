@@ -21,12 +21,11 @@
 ```
 ]]
 
-local merge_arrays = require('lib.commons').merge_arrays
-
-return merge_arrays(
+return {
     require 'config.packages.colorscheme',
     require 'config.packages.dired',
     require 'config.packages.telescope',
-    require 'config.packages.ui'
-)
+    require 'config.packages.ui',
+    require 'config.packages.lsp',
+}
 
