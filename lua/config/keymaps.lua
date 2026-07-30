@@ -12,7 +12,7 @@ local window_keymaps = {
     { 'n', '<leader>ws', vim.cmd.new,                                  { desc = 'Split the window horizontally' } },
 }
 
-for _, action in ipairs { 'c', 'h', 'j', 'k', 'l', 'H', 'J', 'K', 'L', 'o', 'p', 'q', 'w', '=' } do
+for _, action in ipairs { 'c', 'h', 'j', 'k', 'l', 'H', 'J', 'K', 'L', 'o', 'p', 'q', 'w', '=', 't', 'b' } do
     table.insert(window_keymaps, { 'n', '<leader>w' .. action, '<C-w>' .. action })
 end
 
