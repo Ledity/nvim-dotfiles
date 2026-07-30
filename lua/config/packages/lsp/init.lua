@@ -23,8 +23,12 @@ return {
         config = function()
             local servers = { 'jdtls', 'kotlin_lsp', 'bashls', 'fish_lsp', 'groovyls', 'lua_ls', 'rust_analyzer', 'gopls', }
             for _, server in ipairs(servers) do
-                pcall(require, 'config.packages.lsp' .. server)
-                vim.lsp.enable(server)
+                local ok, result = pcall(require, 'config.packages.lsp' .. server)
+                if ok then
+                    vim.lsp.enable(result)
+                else
+                    vim.lsp.enable(server)
+                end
             end
 
             nmap('<C-space>', vim.diagnostic.open_float)
