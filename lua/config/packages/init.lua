@@ -26,5 +26,5 @@ return {
     require 'config.packages.dired',
     require 'config.packages.telescope',
     require 'config.packages.ui',
-    require 'config.packages.lsp',
+    require 'config.packages.code',
 }
