@@ -9,6 +9,10 @@ local opts = {
 
     splitright = true,
     splitbelow = true,
+
+    langmap =
+        'ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,' ..
+        'фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz'
 }
 
 return opts
