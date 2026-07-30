@@ -14,8 +14,13 @@ return {
     {
         src = 'https://github.com/akinsho/bufferline.nvim',
         config = function()
-            require('bufferline').setup {
-            }
+            require('bufferline').setup {}
+        end
+    },
+    {
+        src = 'https://github.com/vzze/cmdline.nvim',
+        config = function()
+            require('cmdline').setup {}
         end
     }
 }
