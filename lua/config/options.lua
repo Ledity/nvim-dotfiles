@@ -6,6 +6,7 @@ local opts = {
     number = true,
     cursorline = true,
     relativenumber = true,
+    showmode = false,
 
     splitright = true,
     splitbelow = true,
