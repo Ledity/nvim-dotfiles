@@ -21,14 +21,23 @@ return {
     {
         src = 'https://github.com/neovim/nvim-lspconfig',
         config = function()
-            local servers = { 'jdtls', 'kotlin_lsp', 'bashls', 'fish_lsp', 'groovyls', 'lua_ls', 'rust_analyzer', 'gopls', }
+            local servers = {
+                'jdtls',
+                'kotlin_lsp',
+                'bashls',
+                'fish_lsp',
+                'groovyls',
+                'lua_ls',
+                'rust_analyzer',
+                'gopls',
+                'tinymist',
+            }
             for _, server in ipairs(servers) do
-                local ok, result = pcall(require, 'config.packages.lsp' .. server)
+                local ok, config = pcall(require, 'config.packages.lsp' .. server)
                 if ok then
-                    vim.lsp.enable(result)
-                else
-                    vim.lsp.enable(server)
+                    vim.lsp.config(server, config)
                 end
+                vim.lsp.enable(server)
             end
 
             nmap('<C-space>', vim.diagnostic.open_float)
