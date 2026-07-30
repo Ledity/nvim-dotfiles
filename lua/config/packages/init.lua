@@ -28,4 +28,3 @@ return {
     require 'config.packages.ui',
     require 'config.packages.lsp',
 }
-

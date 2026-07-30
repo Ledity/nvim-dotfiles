@@ -32,4 +32,10 @@ return {
             }
         end
     },
+    {
+        src = 'https://github.com/rachartier/tiny-code-action.nvim',
+        config = function()
+            nmap('<leader>ca', require('tiny-code-action').code_action)
+        end
+    },
 }
