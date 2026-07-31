@@ -1,3 +1,7 @@
+local commons = require('lib.commons')
+local random_file = commons.random_file
+local file_to_lines = commons.file_to_lines
+
 return {
     'https://github.com/nvim-tree/nvim-web-devicons',
     {
@@ -35,9 +39,12 @@ return {
     },
     {
         src = 'https://github.com/leo-alvarenga/homecoming.nvim',
-        -- config = 'Homecoming',
         config = function()
-            require('homecoming-nvim').setup {}
+            local splash_file = random_file(vim.fn.stdpath('config') .. '/splash/')
+            local splash = file_to_lines(splash_file)
+            require('homecoming-nvim').setup {
+                header = splash,
+            }
         end
     }
 }
