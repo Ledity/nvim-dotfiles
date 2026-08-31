@@ -1,5 +1,13 @@
 local m = {}
 
+function m.is_termux()
+    if os.getenv("TERMUX_VERSION") then
+        return true
+    else
+        return false
+    end
+end
+
 function m.random_file(location)
     math.randomseed(os.time())
     local files = vim.fn.split(vim.fn.glob(location .. '/*'), '\n')
