@@ -4,6 +4,12 @@ local imap = kmaps.imap
 
 return {
     {
+        src = 'https://github.com/mason-org/mason.nvim',
+        config = function()
+            require('mason').setup {}
+        end
+    },
+    {
         src = 'https://github.com/neovim/nvim-lspconfig',
         config = function()
             local servers = {
