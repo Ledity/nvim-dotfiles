@@ -11,7 +11,8 @@ return {
                 'rust',
                 'go',
                 'bash',
-                'fish'
+                'fish',
+                'elvish'
             }
         end
     },
