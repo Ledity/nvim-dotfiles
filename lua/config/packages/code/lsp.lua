@@ -13,14 +13,15 @@ return {
         src = 'https://github.com/neovim/nvim-lspconfig',
         config = function()
             local servers = {
+                'bashls',
+                'clangd',
+                'fish_lsp',
+                'gopls',
+                'groovyls',
                 'jdtls',
                 'kotlin_lsp',
-                'bashls',
-                'fish_lsp',
-                'groovyls',
                 'lua_ls',
                 'rust_analyzer',
-                'gopls',
                 'tinymist',
             }
             for _, server in ipairs(servers) do
