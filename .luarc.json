@@ -1,0 +1,6 @@
+{
+  "workspace.library": [
+      "/data/data/com.termux/files/usr/share/nvim/runtime/lua",
+      "/usr/share/nvim/runtime/lua"
+  ]
+}
