@@ -24,6 +24,7 @@ return {
                 'rust_analyzer',
                 'vala_ls',
                 'tinymist',
+                'vala_ls'
             }
             for _, server in ipairs(servers) do
                 local ok, config = pcall(require, 'config.lsp' .. server)
