@@ -22,6 +22,7 @@ return {
                 'kotlin_lsp',
                 'lua_ls',
                 'rust_analyzer',
+                'vala_ls',
                 'tinymist',
             }
             for _, server in ipairs(servers) do

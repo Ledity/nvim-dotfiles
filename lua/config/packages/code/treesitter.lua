@@ -12,7 +12,8 @@ return {
                 'go',
                 'bash',
                 'fish',
-                'elvish'
+                'elvish',
+                'vala'
             }
         end
     },
