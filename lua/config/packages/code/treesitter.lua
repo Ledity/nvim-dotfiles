@@ -3,16 +3,17 @@ return {
         src = 'https://github.com/nvim-treesitter/nvim-treesitter',
         config = function()
             require('nvim-treesitter').install {
-                'xml',
+                'bash',
+                'elvish',
+                'fish',
+                'go',
                 'html',
-                'lua',
                 'java',
                 'kotlin',
+                'lua',
                 'rust',
-                'go',
-                'bash',
-                'fish',
-                'elvish'
+                'vala',
+                'xml',
             }
         end
     },
