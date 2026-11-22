@@ -1,6 +1,7 @@
 local merge_arrays = require('lib.commons').merge_arrays
 
 return merge_arrays(
+    require('config.packages.code.langs'),
     require('config.packages.code.lsp'),
     require('config.packages.code.completions'),
     require('config.packages.code.format'),
